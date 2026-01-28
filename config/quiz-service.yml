@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: quiz-service
+  data:
+    mongodb:
+      uri: mongodb://127.0.0.1:27019/quiz-db?directConnection=true&serverSelectionTimeoutMS=3000&connectTimeoutMS=3000&socketTimeoutMS=3000
+      database: quiz-db
+server:
+  port: 9092
+#logging:
+#  level:
+#    org.springframework.data.mongodb: DEBUG
+#    org.mongodb.driver: DEBUG
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+    prefer-ip-address: true

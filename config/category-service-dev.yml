@@ -1,8 +1,9 @@
 config:
 
-  value: Development environment of Category Service, testing
+  value: Development environment of Category Service, changes are added.
 server:
   port: 9091
+
 
 
 

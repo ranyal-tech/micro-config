@@ -1,2 +1,5 @@
 config:
+
   value: Prod environment of category service
+server:
+  port: 9091
